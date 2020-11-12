@@ -1,0 +1,33 @@
+.bus {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid;
+}
+
+.row {
+  padding: 5px;
+}
+
+#steering {
+  display: flex;
+  justify-content: flex-end;
+}
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio]:hover + img, [type=radio]:checked + img {
+  background: url("C:/users/msaad/Desktop/bus seat/img/seathover.png") no-repeat;
+}
+
+.single {
+  padding-right: 25px;
+}
