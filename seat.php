@@ -23,5 +23,5 @@ $Departure= $_POST['departure'];
   );
 
   $_SESSION['seats'] = $seat;
-?>
+?> 
  
