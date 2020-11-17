@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
-    <form action="PassengerDetailForm.html" method="post">
+    <form action="PassengerDetailForm.php" method="post">
       <div class="container">
         <div class="column">
           <div class="bus_seat">
