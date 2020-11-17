@@ -47,7 +47,7 @@
 
         <br>
         <div class="button">
-          <button type="button" onclick="document.location='index1.php'" name="Homepage" > Home </button>
+          <button type="button" onclick="document.location='index.php'" name="Homepage" > Home </button>
 
         </div>
 
