@@ -2,6 +2,12 @@
   session_start();
   header("Location: bus.php");
 
+$Departure= $_POST['departure'];
+  $Arrival= $_POST['arrival'];
+  $Date= $_POST['date'];
+
+  $_SESSION['details']=array('departure'=>$Departure,'arrival'=>$Arrival,'date'=>$Date);
+
   //first element is seat number, second element is seat status (0 is available, 1 is reserved)
   $seat = array(
     array(array(1, 0), array(2, 0), array(3, 0)),
