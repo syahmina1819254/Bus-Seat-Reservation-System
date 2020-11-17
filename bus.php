@@ -57,5 +57,23 @@
         </div>
       </div>
     </form>
+	  <H4>This seat price is : <span class="result"></span></h4>
+      <script>
+
+          $('input[type=radio]').click(function(e) {
+
+              var seat = $("input[name='seat']:checked").val( );
+              var price;
+
+              if (seat==1||seat==4||seat==7||seat==10||
+              seat==13||seat==16||seat==19||seat==22||seat==25
+              ||seat==28 ) {
+                price="RM35.00";
+              } else price="RM30.00";
+
+              $('.result').html(price);
+
+
+          });
   </body>
 </html>
