@@ -23,7 +23,7 @@
     {
       if ($seat==1||$seat==4||$seat==7||$seat==10||
       $seat==13||$seat==16||$seat==19||$seat==22||$seat==25
-      ||$seat==28 ) { echo "Single Seat";
+      ||$seat==28 ) { echo "RM35 Single Seat";
       }
       else {
         echo "RM30(Double Seat)";
