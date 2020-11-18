@@ -12,9 +12,16 @@
       if($seatNo % 3 == 1) {
         $priceText = "RM " . number_format(35.00 + (35.00 * 0.05), 2, '.', '');
         $seatText = $seatNo . " (Single seat)";
-      } else {
+      } 
+	  
+	  else if($seatNo % 3 == 2) {
+		$priceText = "RM " . number_format(35.00 + (35.00 * 0.05), 2, '.', '');
+        $seatText = $seatNo . " (Double seat) (Aisle)";
+	  }
+	  
+	  else {
         $priceText = "RM " . number_format(30.00 + (30.00 * 0.05), 2, '.', '');
-        $seatText = $seatNo . " (Double seat)";
+        $seatText = $seatNo . " (Double seat) (Window)";
       }
     ?>
     <div class="header">

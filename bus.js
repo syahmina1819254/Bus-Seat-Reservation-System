@@ -10,9 +10,16 @@ $(document).ready(function() {
     if(radioVal % 3 == 1) {
       priceText = "RM 35.00";
       seatText = parseInt(radioVal) + " (Single seat)";
-    } else {
+    } 
+    
+    else if(radioVal % 3 == 2) {
       priceText = "RM 30.00";
-      seatText = parseInt(radioVal) + " (Double seat)";
+      seatText = parseInt(radioVal) + " (Double seat) (Aisle)";
+    } 
+
+    else {
+      priceText = "RM 30.00";
+      seatText = parseInt(radioVal) + " (Double seat) (Window)";
     }
 
     $('#seatNo').html(seatText);
