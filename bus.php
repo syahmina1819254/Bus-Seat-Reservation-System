@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Bus Seat Reservation</title>
     <link rel="stylesheet" href="css/master.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <form action="PassengerDetailForm.php" method="post">
@@ -57,23 +58,30 @@
         </div>
       </div>
     </form>
-	  <H4>This seat price is : <span class="result"></span></h4>
+	   <H4>This seat price is : <span class="result"></span></h4>
+    <H4>This seat type is : <span class="types"></span></h4>
       <script>
 
           $('input[type=radio]').click(function(e) {
 
               var seat = $("input[name='seat']:checked").val( );
               var price;
+              var type;
 
               if (seat==1||seat==4||seat==7||seat==10||
               seat==13||seat==16||seat==19||seat==22||seat==25
               ||seat==28 ) {
                 price="RM35.00";
-              } else price="RM30.00";
-
+                type="Single Seat";
+              } else {
+                 price="RM30.00";
+                 type="Double Seat";
+               }
               $('.result').html(price);
+              $('.types').html(type);
 
 
           });
+      </script>
   </body>
 </html>
