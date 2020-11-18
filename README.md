@@ -8,3 +8,5 @@
 2. Siti Nurbalqis binti Saharudin (1715230)
 3. Muhammad Syahmi Aiman bin Mohd Shahrin (1811893)
 4. Muhammad Amir Firdaus bin Zaidin (1716549)
+
+Credits to: Good Ware & Smashicons for icons used in the project.
