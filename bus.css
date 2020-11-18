@@ -1,11 +1,77 @@
-.bus {
+html, body {
+  font-family: Roboto, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  min-height: 100%;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  z-index: 2;
+}
+
+.header {
+  position: relative;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #666;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background: rgb(96,96,99);
+  background: linear-gradient(0deg, rgba(96,96,99,1) 0%, rgba(165,165,165,1) 68%, rgba(233,233,233,1) 100%);
+}
+
+.bus_seat {
   display: inline-block;
   padding: 10px;
   border: 2px solid;
+  background-color: #fff;
 }
 
 .row {
   padding: 5px;
+}
+
+.column {
+  background-color: #c4c4c4;
+  flex: 50%;
+}
+
+#bus_center {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#seat_center {
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.book {
+  width: 50%;
+  border: 2px solid;
+  padding: 50px;
+  background-color: #fff;
 }
 
 #steering {
@@ -25,7 +91,7 @@
 }
 
 [type=radio]:hover + img, [type=radio]:checked + img {
-  background: url("C:/users/msaad/Desktop/bus seat/img/seathover.png") no-repeat;
+  background: url("img/seathover.png") no-repeat;
 }
 
 .single {
